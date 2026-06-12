@@ -1,0 +1,111 @@
+.about-editorial-grid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.about-visual {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background: linear-gradient(135deg, var(--accent-color), var(--accent-secondary));
+  border: none;
+}
+
+.abstract-shape {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  top: -50px;
+  left: -50px;
+  animation: float 10s infinite ease-in-out;
+}
+
+.secondary-shape {
+  width: 200px;
+  height: 200px;
+  bottom: -30px;
+  right: -30px;
+  top: auto;
+  left: auto;
+  animation: float 8s infinite ease-in-out reverse;
+}
+
+.visual-title {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 800;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.about-text-panel {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 3rem;
+}
+
+.about-text {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.editorial-stats {
+  display: flex;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(0,0,0,0.05);
+}
+
+.ed-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.ed-stat-num {
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: var(--font-heading);
+  background: linear-gradient(135deg, var(--accent-tertiary), var(--accent-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.25rem;
+}
+
+.ed-stat-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+@media (max-width: 992px) {
+  .about-editorial-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-visual {
+    min-height: 300px;
+  }
+  .editorial-stats {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
