@@ -1,40 +1,85 @@
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
 }
 
 .education-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 2.5rem;
 }
 
-.edu-degree {
-  font-size: 1.2rem;
+.edu-blue { border-color: rgba(79, 142, 247, 0.35); }
+.edu-purple { border-color: rgba(155, 93, 229, 0.35); }
+
+.edu-blue::before {
+  background: linear-gradient(135deg, rgba(79,142,247,0.07) 0%, transparent 60%);
+}
+.edu-purple::before {
+  background: linear-gradient(135deg, rgba(155,93,229,0.07) 0%, transparent 60%);
+}
+
+.edu-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.edu-body {
+  flex: 1;
+}
+
+.edu-degree-level {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.edu-purple .edu-degree-level {
+  color: var(--accent-purple);
+}
+
+.edu-field {
+  font-size: 1.4rem;
+  font-weight: 600;
   color: var(--text-primary);
+  letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
   line-height: 1.3;
-  font-weight: 500;
 }
 
 .edu-institution {
   font-size: 1rem;
-  font-weight: 400;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
 }
 
-.edu-meta {
-  margin-top: auto;
+.edu-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
 }
 
-.edu-grade {
+.edu-grade-badge {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--text-primary);
-  padding: 0.3rem 0.8rem;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
-  display: inline-block;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  border: 1px solid rgba(79, 142, 247, 0.4);
+  background: rgba(79, 142, 247, 0.08);
+  color: var(--accent-blue);
+}
+
+.edu-purple .edu-grade-badge {
+  border-color: rgba(155, 93, 229, 0.4);
+  background: rgba(155, 93, 229, 0.08);
+  color: var(--accent-purple);
+}
+
+@media (max-width: 600px) {
+  .education-grid { grid-template-columns: 1fr; }
 }

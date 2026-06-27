@@ -1,55 +1,68 @@
 import React from 'react';
 import './Projects.css';
 
-const Projects = () => {
-  const projectList = [
-    {
-      title: "AI-Powered Healthcare Assistant",
-      description: "An intelligent virtual assistant designed for clinical settings, utilizing Large Language Models to streamline patient triage and provide preliminary medical guidance.",
-      tags: ["LLMs", "Python", "React", "FastAPI"],
-      highlight: true
-    },
-    {
-      title: "Health Care Disease Prediction",
-      description: "A robust machine learning pipeline for early disease detection using electronic health records (EHR). Integrates deep learning models for high-accuracy predictions.",
-      tags: ["PyTorch", "Pandas", "Scikit-Learn"],
-      highlight: false
-    },
-    {
-      title: "Enterprise Chatbot Architecture",
-      description: "A scalable, intent-driven chatbot deployed across customer service channels, reducing human agent load by 40% while maintaining high CSAT scores.",
-      tags: ["NLP", "TensorFlow", "Node.js"],
-      highlight: false
-    },
-    {
-      title: "E-Commerce Recommender System",
-      description: "A collaborative filtering and content-based recommendation engine that personalized the shopping experience, resulting in a 25% increase in conversion rates.",
-      tags: ["Apache Spark", "Python", "AWS"],
-      highlight: true
-    },
-    {
-      title: "Customer Churn Prediction",
-      description: "An advanced predictive model leveraging historical user behavioral data to identify at-risk customers, allowing proactive retention strategies.",
-      tags: ["XGBoost", "Data Analytics", "SQL"],
-      highlight: false
-    }
-  ];
+const projectList = [
+  {
+    title: "AI-Powered Healthcare Assistant",
+    description: "An intelligent virtual assistant for clinical settings, utilizing Large Language Models to streamline patient triage and provide preliminary medical guidance.",
+    tags: ["LLMs", "Python", "React", "FastAPI"],
+    highlight: true,
+    icon: "🏥",
+    color: "blue"
+  },
+  {
+    title: "Disease Prediction Engine",
+    description: "A robust ML pipeline for early disease detection using electronic health records. Deep learning models achieve high-accuracy diagnoses.",
+    tags: ["PyTorch", "Pandas", "Scikit-Learn"],
+    highlight: false,
+    icon: "🔬",
+    color: "purple"
+  },
+  {
+    title: "Enterprise Chatbot Architecture",
+    description: "A scalable, intent-driven chatbot reducing human agent load by 40% while maintaining high customer satisfaction scores.",
+    tags: ["NLP", "TensorFlow", "Node.js"],
+    highlight: false,
+    icon: "🤖",
+    color: "cyan"
+  },
+  {
+    title: "E-Commerce Recommender System",
+    description: "Collaborative filtering and content-based recommendation engine that increased conversion rates by 25%.",
+    tags: ["Apache Spark", "Python", "AWS"],
+    highlight: true,
+    icon: "🛒",
+    color: "pink"
+  },
+  {
+    title: "Customer Churn Predictor",
+    description: "Advanced predictive model leveraging behavioral data to identify at-risk customers and enable proactive retention strategies.",
+    tags: ["XGBoost", "SQL", "Data Analytics"],
+    highlight: false,
+    icon: "📊",
+    color: "blue"
+  }
+];
 
+const Projects = () => {
   return (
     <section id="projects" className="section">
       <div className="container">
-        <h2 className="section-title">Featured Work</h2>
-        <div className="projects-editorial-grid">
+        <span className="section-label">// featured work</span>
+        <h2 className="section-title">Selected <span className="gradient-text">Projects</span></h2>
+        <div className="projects-grid">
           {projectList.map((project, index) => (
-            <div key={index} className={`bento-panel project-editorial-card ${project.highlight ? 'project-highlight' : 'project-standard'}`}>
-              <div className="project-content">
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-description">{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map((tag, i) => (
-                    <span key={i} className="tech-badge">{tag}</span>
-                  ))}
-                </div>
+            <div key={index} className={`bento-panel project-card proj-color-${project.color} ${project.highlight ? 'proj-highlight' : ''}`}>
+              <div className="project-top">
+                <span className="proj-icon">{project.icon}</span>
+                <span className="proj-arrow">↗</span>
+              </div>
+              <h3 className="proj-title">{project.title}</h3>
+              <p className="proj-desc">{project.description}</p>
+              <div className="proj-tags">
+                {project.tags.map((tag, i) => (
+                  <span key={i} className="tech-badge">{tag}</span>
+                ))}
               </div>
             </div>
           ))}

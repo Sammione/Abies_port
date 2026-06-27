@@ -5,7 +5,8 @@ const About = () => {
   return (
     <section id="about" className="section about-section">
       <div className="container">
-        <h2 className="section-title">About</h2>
+        <span className="section-label">// about me</span>
+        <h2 className="section-title">Turning Data Into<br/><span className="gradient-text">Impact.</span></h2>
         
         <div className="about-grid">
           <div className="bento-panel about-main-text">
@@ -19,20 +20,36 @@ const About = () => {
               transforming the healthcare sector. My work empowers medical professionals through predictive analytics 
               and intelligent automation, ensuring data-driven decisions save lives.
             </p>
+            <div className="about-divider"></div>
+            <div className="about-highlights">
+              <div className="highlight-item">
+                <span>⚡</span> Real-time ML pipelines at scale
+              </div>
+              <div className="highlight-item">
+                <span>🏥</span> Healthcare AI & predictive diagnostics
+              </div>
+              <div className="highlight-item">
+                <span>🤖</span> Generative AI & LLM fine-tuning
+              </div>
+            </div>
           </div>
 
           <div className="about-stats-grid">
-            <div className="bento-panel stat-card">
-              <span className="stat-num">Data & AI</span>
-              <span className="stat-label">Core Focus</span>
-            </div>
-            <div className="bento-panel stat-card">
+            <div className="bento-panel stat-card stat-blue">
               <span className="stat-num">50+</span>
-              <span className="stat-label">Models Deployed</span>
+              <span className="stat-label">AI Models Deployed</span>
             </div>
-            <div className="bento-panel stat-card">
+            <div className="bento-panel stat-card stat-purple">
               <span className="stat-num">12</span>
-              <span className="stat-label">Publications</span>
+              <span className="stat-label">Research Papers</span>
+            </div>
+            <div className="bento-panel stat-card stat-cyan">
+              <span className="stat-num">5+</span>
+              <span className="stat-label">Years Experience</span>
+            </div>
+            <div className="bento-panel stat-card stat-pink">
+              <span className="stat-num">∞</span>
+              <span className="stat-label">Lines of Code</span>
             </div>
           </div>
         </div>
