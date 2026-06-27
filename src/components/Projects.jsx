@@ -41,13 +41,13 @@ const Projects = () => {
         <h2 className="section-title">Featured Work</h2>
         <div className="projects-editorial-grid">
           {projectList.map((project, index) => (
-            <div key={index} className={`glass-panel project-editorial-card ${project.highlight ? 'project-highlight' : 'project-standard'}`}>
+            <div key={index} className={`bento-panel project-editorial-card ${project.highlight ? 'project-highlight' : 'project-standard'}`}>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.description}</p>
                 <div className="project-tags">
                   {project.tags.map((tag, i) => (
-                    <span key={i} className="project-tag">{tag}</span>
+                    <span key={i} className="tech-badge">{tag}</span>
                   ))}
                 </div>
               </div>

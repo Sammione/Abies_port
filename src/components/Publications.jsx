@@ -29,7 +29,7 @@ const Publications = () => {
         <h2 className="section-title">Research & Publications</h2>
         <div className="publications-list">
           {publications.map((pub, index) => (
-            <div key={index} className="publication-item glass-panel">
+            <div key={index} className="bento-panel publication-item">
               <div className="pub-header">
                 <h3 className="pub-title">{pub.title}</h3>
                 <span className="pub-year">{pub.year}</span>

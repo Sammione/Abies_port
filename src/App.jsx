@@ -4,16 +4,16 @@ import Projects from './components/Projects';
 import Publications from './components/Publications';
 import About from './components/About';
 import Skills from './components/Skills';
+import Education from './components/Education';
 import Contact from './components/Contact';
 import './index.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="bg-blob bg-blob-1"></div>
-      <div className="bg-blob bg-blob-2"></div>
       <Hero />
       <About />
+      <Education />
       <Skills />
       <Projects />
       <Publications />

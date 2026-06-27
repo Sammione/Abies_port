@@ -7,37 +7,37 @@ const Skills = () => {
       <div className="container">
         <h2 className="section-title">Core Expertise</h2>
         <div className="bento-skills">
-          <div className="skill-bento-card bento-large glass-panel">
+          <div className="bento-panel skill-bento-card bento-large">
             <h3 className="bento-title">Artificial Intelligence</h3>
             <p className="bento-desc">Architecting intelligent systems using state-of-the-art Generative AI and advanced deep learning methodologies.</p>
             <div className="skill-tags">
-              <span className="skill-tag">Large Language Models (LLMs)</span>
-              <span className="skill-tag">Natural Language Processing</span>
-              <span className="skill-tag">Computer Vision</span>
-              <span className="skill-tag">Generative AI</span>
+              <span className="tech-badge">Large Language Models (LLMs)</span>
+              <span className="tech-badge">Natural Language Processing</span>
+              <span className="tech-badge">Computer Vision</span>
+              <span className="tech-badge">Generative AI</span>
             </div>
           </div>
           
-          <div className="skill-bento-card bento-medium glass-panel">
+          <div className="bento-panel skill-bento-card bento-medium">
             <h3 className="bento-title">Machine Learning</h3>
             <p className="bento-desc">Building robust, scalable predictive models from experimental design to production deployment.</p>
             <div className="skill-tags">
-              <span className="skill-tag">PyTorch</span>
-              <span className="skill-tag">TensorFlow</span>
-              <span className="skill-tag">Scikit-Learn</span>
-              <span className="skill-tag">XGBoost</span>
+              <span className="tech-badge">PyTorch</span>
+              <span className="tech-badge">TensorFlow</span>
+              <span className="tech-badge">Scikit-Learn</span>
+              <span className="tech-badge">XGBoost</span>
             </div>
           </div>
 
-          <div className="skill-bento-card bento-wide glass-panel">
+          <div className="bento-panel skill-bento-card bento-wide">
             <h3 className="bento-title">Data Analysis & Visualization</h3>
             <p className="bento-desc">Transforming complex, high-dimensional datasets into actionable insights and strategic business intelligence.</p>
             <div className="skill-tags">
-              <span className="skill-tag">Pandas</span>
-              <span className="skill-tag">NumPy</span>
-              <span className="skill-tag">Statistical Modeling</span>
-              <span className="skill-tag">Tableau</span>
-              <span className="skill-tag">PowerBI</span>
+              <span className="tech-badge">Pandas</span>
+              <span className="tech-badge">NumPy</span>
+              <span className="tech-badge">Statistical Modeling</span>
+              <span className="tech-badge">Tableau</span>
+              <span className="tech-badge">PowerBI</span>
             </div>
           </div>
         </div>
