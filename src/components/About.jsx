@@ -22,15 +22,9 @@ const About = () => {
             </p>
             <div className="about-divider"></div>
             <div className="about-highlights">
-              <div className="highlight-item">
-                <span>⚡</span> Real-time ML pipelines at scale
-              </div>
-              <div className="highlight-item">
-                <span>🏥</span> Healthcare AI & predictive diagnostics
-              </div>
-              <div className="highlight-item">
-                <span>🤖</span> Generative AI & LLM fine-tuning
-              </div>
+              <div className="highlight-item">Real-time ML pipelines at scale</div>
+              <div className="highlight-item">Healthcare AI & predictive diagnostics</div>
+              <div className="highlight-item">Generative AI & LLM fine-tuning</div>
             </div>
           </div>
 

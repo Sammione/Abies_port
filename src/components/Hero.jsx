@@ -9,7 +9,7 @@ const Hero = () => {
         {/* LEFT: Text content */}
         <div className="hero-content animate-fade-in">
           <div className="hero-mono-tag">
-            <span className="dot"></span> Available for opportunities
+            Available for opportunities
           </div>
           <h1 className="hero-title">
             Hi, I'm <span className="gradient-text">Abi Ogbebor</span>
@@ -40,7 +40,6 @@ const Hero = () => {
           <div className="profile-container">
             <img src="/profile.JPG" alt="Abi Ogbebor" className="hero-profile-pic" />
           </div>
-          {/* Floating stat chips */}
           <div className="hero-chip chip-1">
             <span className="chip-num">50+</span>
             <span className="chip-label">AI Models</span>

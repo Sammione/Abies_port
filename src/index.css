@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  /* Dark Mode Palette - Deep Navy/Purple with pops of color */
-  --bg-color: #06071a;
-  --bg-secondary: #0d0f2b;
+  /* Black & White Palette */
+  --bg-color: #000000;
+  --bg-secondary: #0a0a0a;
   --bg-panel: rgba(255, 255, 255, 0.04);
 
-  --text-primary: #f0f0ff;
-  --text-secondary: #8888aa;
+  --text-primary: #ffffff;
+  --text-secondary: #888888;
 
   /* Accent colors - vibrant */
   --accent-blue: #4f8ef7;

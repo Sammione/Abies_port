@@ -8,7 +8,6 @@ const Education = () => {
       field: "Data Science & Business Analytics",
       institution: "University of Plymouth",
       grade: "Distinction",
-      icon: "🎓",
       color: "blue"
     },
     {
@@ -16,7 +15,6 @@ const Education = () => {
       field: "Geology",
       institution: "University of Benin (Uniben)",
       grade: "Second Class",
-      icon: "🏛️",
       color: "purple"
     }
   ];
@@ -29,7 +27,6 @@ const Education = () => {
         <div className="education-grid">
           {educationData.map((edu, index) => (
             <div key={index} className={`bento-panel education-card edu-${edu.color}`}>
-              <div className="edu-icon">{edu.icon}</div>
               <div className="edu-body">
                 <span className="edu-degree-level">{edu.degree}</span>
                 <h3 className="edu-field">{edu.field}</h3>
