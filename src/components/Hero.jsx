@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="hero-image-wrapper animate-fade-in">
           <div className="profile-glow-ring"></div>
           <div className="profile-container">
-            <img src="/profile.jpg" alt="Abi Ogbebor" className="hero-profile-pic" />
+            <img src="/profile.JPG" alt="Abi Ogbebor" className="hero-profile-pic" />
           </div>
           {/* Floating stat chips */}
           <div className="hero-chip chip-1">
